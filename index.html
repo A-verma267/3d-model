@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full">
+      <nav class="w-full fixed top-0 left-0 px-10 py-3 flex justify-between items-center ">
+        <img class=" w-[120px] " src="cyberpunk.png" alt="">
+        <div>
+          <a href="#" class="text-white mx-4 hover:text-purple-500 transition-colors">Home</a>
+          <a href="#" class="text-white mx-4 hover:text-purple-500 transition-colors">About</a>
+          <a href="#" class="text-white mx-4 hover:text-purple-500 transition-colors">Gallery</a>
+          <a href="#" class="text-white mx-4 hover:text-purple-500 transition-colors">Contact</a>
+        </div>
+      </nav>
+      <div class="w-full h-screen overflow-hidden">
+        <img class="absolute w-3/4 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 mix-blend-screen filter saturate-150 contrast-125" src="cyberpunk.png" alt="">
+        <div class="w-[34rem] h-[34rem] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-[-1] rounded-full bg blur-[90px]"></div>
+        <canvas id="canvas"></canvas>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
